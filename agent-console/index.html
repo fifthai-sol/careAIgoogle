@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agent Console - CareAI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              light: '#93c5fd', // blue-300
+              DEFAULT: '#3b82f6', // blue-500
+              dark: '#2563eb', // blue-600
+            },
+            secondary: '#10b981', // emerald-500
+            consoleAccent: '#4f46e5', // indigo-600
+            consoleBg: '#f3f4f6', // gray-100
+            consoleText: '#1f2937', // gray-800
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    html, body, #root {
+      height: 100%;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #e5e7eb; /* gray-200 */
+    }
+    .chat-bubble-user {
+        background-color: #d1d5db; /* gray-300 */
+        color: #1f2937; /* gray-800 */
+        align-self: flex-start;
+        border-radius: 0.75rem 0.75rem 0.75rem 0.25rem;
+    }
+    .chat-bubble-agent {
+        background-color: #3b82f6; /* blue-500 */
+        color: white;
+        align-self: flex-end;
+        border-radius: 0.75rem 0.75rem 0.25rem 0.75rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/index.tsx"></script>
+</body>
+</html>

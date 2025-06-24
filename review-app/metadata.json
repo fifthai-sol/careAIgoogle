@@ -1,0 +1,5 @@
+{
+  "name": "Review Application",
+  "description": "A simple application for managing and displaying reviews.",
+  "requestFramePermissions": []
+}

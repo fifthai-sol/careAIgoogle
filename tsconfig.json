@@ -1,0 +1,32 @@
+
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler", // or "node" if "bundler" causes issues with older setups
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true, // Recommended for React
+    "forceConsistentCasingInFileNames": true, // Good practice
+    "baseUrl": ".", // Allows absolute imports from src if paths are set
+    "paths": {
+      "@/*": ["src/*"] // Example: allows import '@/components/...'
+    }
+  },
+  "include": ["src", "vite.config.ts"], // Include Vite config
+  "references": [{ "path": "./tsconfig.node.json" }] // Separate config for Vite/Node specific types
+}

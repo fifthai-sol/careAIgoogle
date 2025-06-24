@@ -1,0 +1,5 @@
+{
+  "name": "CareAI Agent Console",
+  "description": "Console for human agents to handle escalated chats from CareAI.",
+  "requestFramePermissions": []
+}
